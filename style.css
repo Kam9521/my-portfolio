@@ -1,14 +1,100 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
 
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  gap: 30px;
 }
-h1 {
-    color: #333;
+
+.left-column {
+  width: 30%;
 }
-p {
-    color: #666;
-    
+
+.right-column {
+  width: 70%;
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-box,
+.profile-box,
+.skills-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box h2,
+.profile-box h2,
+.skills-box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1d3b7a;
+}
+
+.profile-box h4 {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.skills-box ul,
+.main-content ul {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.skills-box li,
+.main-content li {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.intro-section h1 {
+  font-size: 28px;
+  color: #1d3b7a;
+  margin-bottom: 10px;
+}
+
+.intro-section p {
+  font-size: 16px;
+  color: #555;
+}
+
+.main-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.main-content h2 {
+  font-size: 22px;
+  color: #1d3b7a;
+  margin-top: 20px;
+}
+
+.main-content h4 {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.main-content p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
 }
