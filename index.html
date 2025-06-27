@@ -1,69 +1,105 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Kamil Mytyl</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; color: #333; }
-    .section { margin-bottom: 30px; }
-    h1, h2, h4 { margin: 0 0 10px; }
-    ul { padding-left: 20px; }
-  </style>
-</head>
-<body>
-  <h1>Cześć, mam na imię Kamil</h1>
-  <h4>To jest mój pierwszy projekt HTML + CSS opublikowany na GitHub Pages.</h4>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamil Mytyl - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-column">
+        <img src="myphoto.jpg" alt="Moje zdjęcie" class="profile-pic" />
+        <div class="contact-box">
+          <h2>Dane kontaktowe</h2>
+          <p><strong>Telefon:</strong> +48 693 473 094</p>
+          <p><strong>Email:</strong> szpmytyl@wp.pl</p>
+          <p><strong>Adres:</strong> Palcza 86, 34-211 Budzów</p>
+        </div>
+        <div class="profile-box">
+          <h2>Profil zawodowy</h2>
+          <h4>
+            Pracownik techniczny z doświadczeniem w branży budowlanej, obecnie
+            skoncentrowany na przebranżowieniu do branży IT.<br /><br />
+            Ukończyłem wiele kursów z zakresu programowania (HTML, CSS,
+            JavaScript, Java, Python), tworzenia aplikacji webowych i baz
+            danych.<br /><br />
+            Samodzielnie tworzę projekty, rozwijam swoje portfolio i aktywnie
+            uczę się technologii frontendowych.<br /><br />
+            Szukam możliwości zdobycia pierwszego komercyjnego doświadczenia
+            jako Junior Developer.
+          </h4>
+        </div>
+        <div class="skills-box">
+          <h2>Umiejętności i doświadczenie</h2>
+          <ul>
+            <li>Podstawy HTML i CSS</li>
+            <li>Podstawy Java i Python</li>
+            <li>Podstawy MySQL</li>
+            <li>Podstawy uczenia maszynowego</li>
+            <li>Interaktywna wizualizacja danych</li>
+            <li>Bash i Linux</li>
+            <li>Tworzenie gier w Unity (język C#)</li>
+            <li>Podstawy WordPress i WooCommerce</li>
+            <li>Prawo jazdy kat. B</li>
+          </ul>
+        </div>
+      </div>
 
-  <div class="section">
-    <h2>Dane kontaktowe</h2>
-    <ul>
-      <li><strong>Telefon:</strong> 693 473 094</li>
-      <li><strong>Email:</strong> szpmytyl@wp.pl</li>
-      <li><strong>Adres:</strong> Palcza 86, 34-211 Budzów</li>
-    </ul>
-  </div>
+      <div class="right-column">
+        <header class="intro-section">
+          <h1>Cześć, mam na imię Kamil</h1>
+          <p>
+            To jest mój pierwszy projekt HTML + CSS opublikowany na GitHub
+            Pages.
+          </p>
+        </header>
+        <div class="main-content">
+          <h2>Doświadczenie zawodowe</h2>
+          <h4>
+            <strong>Właściciel - firma budowlana "KAM-BUD"</strong><br />2015 -
+            2023
+          </h4>
+          <ul>
+            <li>Remonty i wykończenia mieszkań i domów</li>
+            <li>
+              Nadzór nad przebiegiem prac i bezpośredni kontakt z klientem
+            </li>
+            <li>Montaż płyt G-K, szpachlowanie, malowanie</li>
+            <li>Prace stolarskie i tapicerskie na zlecenie</li>
+            <li>Obsługa narzędzi i sprzętu budowlanego</li>
+          </ul>
+          <h4>
+            <strong>Prace budowlane i tapicerskie jako freelancer</strong
+            ><br />2012 - 2015
+          </h4>
+          <ul>
+            <li>
+              Prace ogólnobudowlane (murowanie, wykończenia wnętrz, montaż)
+            </li>
+          </ul>
 
-  <div class="section">
-    <h2>Profil zawodowy</h2>
-    <p>Pracownik techniczny z doświadczeniem w branży budowlanej. 
-        Obecnie skoncentrowany na przebranżowieniu do IT. 
-        Ukończyłem wiele kursów z zakresu programowania (HTML, CSS, JavaScript, Java, Python), 
-        tworzenia aplikacji webowych oraz baz danych. Samodzielnie tworzę projekty,
-         rozwijam portfolio i aktywnie uczę się technologii frontendowych. 
-         Szukam możliwości zdobycia pierwszego komercyjnego doświadczenia jako Junior Developer.</p>
-  </div>
+          <h2>Wykształcenie</h2>
+          <p>
+            Zasadnicza Szkoła Zawodowa – KEN w Kalwarii Zebrzydowskiej<br />
+            Tytuł: Tapicer – czeladnik
+          </p>
 
-  <div class="section">
-    <h2>Umiejętności i doświadczenie</h2>
-    <ul>
-      <li>Podstawy HTML i CSS</li>
-      <li>Podstawy Java i Python</li>
-      <li>Podstawy MySQL</li>
-      <li>Podstawy uczenia maszynowego (Machine Learning)</li>
-      <li>Interaktywna wizualizacja danych</li>
-      <li>Bash i Linux</li>
-      <li>Tworzenie gier w Unity (język C#)</li>
-      <li>Podstawy WordPress i WooCommerce</li>
-      <li>Prawo jazdy kat. B</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Doświadczenie zawodowe</h2>
-    <h4>Właściciel firmy budowlanej "KAM-BUD" (2015 – 2023)</h4>
-    <ul>
-      <li>Remonty i wykończenia mieszkań</li>
-      <li>Nadzór nad pracami i kontakt z klientem</li>
-      <li>Montaż płyt G-K, szpachlowanie, malowanie, tynkowanie</li>
-      <li>Prace stolarskie i tapicerskie</li>
-      <li>Obsługa narzędzi i sprzętu budowlanego</li>
-    </ul>
-
-    <h4>Prace budowlane i tapicerskie – freelancer (2012 – 2015)</h4>
-    <ul>
-      <li>Prace ogólnobudowlane (murowanie, wykończenia, montaż)</li>
-    </ul>
-  </div>
-</body>
+          <h2>Kursy i szkolenia</h2>
+          <ul>
+            <li>HTML i CSS od podstaw do eksperta – Udemy</li>
+            <li>WordPress + WooCommerce – Udemy</li>
+            <li>Tworzenie gier w Unity (język C#) – Udemy</li>
+            <li>ChatGPT dla programistów – Udemy</li>
+            <li>Python 3 od zera do eksperta – Udemy</li>
+            <li>Interaktywna wizualizacja danych w Pythonie – Udemy</li>
+            <li>Bash i linia komend Linux – Udemy</li>
+            <li>Wstęp do statystyki z Pythonem – Udemy</li>
+            <li>Bootcamp Machine Learning w Pythonie – Udemy</li>
+            <li>MySQL od podstaw – Udemy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
