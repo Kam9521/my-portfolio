@@ -1,101 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kamil Mytyl - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="left-column">
-        <img src="myphoto.jpg" alt="My photo" class="profile-pic" />
-        <div class="contact-box">
-          <h2>Contact Information</h2>
-          <p><strong>Phone:</strong> +48 693 473 094</p>
-          <p><strong>Email:</strong> szpmytyl@wp.pl</p>
-          <p><strong>Address:</strong> Palcza 86, 34-211 Budzów</p>
-        </div>
-        <div class="profile-box">
-          <h2>Professional Profile</h2>
-          <h4>
-            Technical worker with experience in the construction industry,
-            currently focused on transitioning into IT.<br /><br />
-            I have completed various courses in programming (HTML, CSS,
-            JavaScript, Java, Python), web application development, and
-            databases.<br /><br />
-            I independently build projects, develop my portfolio, and actively
-            learn front-end technologies.<br /><br />
-            I am looking for opportunities to gain my first commercial
-            experience as a Junior Developer.
-          </h4>
-        </div>
-        <div class="skills-box">
-          <h2>Skills & Experience</h2>
-          <ul>
-            <li>Basics of HTML & CSS</li>
-            <li>Basics of Java & Python</li>
-            <li>Basics of MySQL</li>
-            <li>Basics of Machine Learning</li>
-            <li>Interactive Data Visualization</li>
-            <li>Bash & Linux</li>
-            <li>Game Development in Unity (C#)</li>
-            <li>Basics of WordPress & WooCommerce</li>
-            <li>Driving License - Category B</li>
-          </ul>
-        </div>
-      </div>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Kamil Mytyl</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; color: #333; }
+    .language-switch { float: right; }
+    .section { margin-bottom: 30px; }
+    h1, h2, h4 { margin: 0 0 10px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="language-switch">
+    <button onclick="setLanguage('pl')">Polski</button>
+    <button onclick="setLanguage('en')">English</button>
+  </div>
 
-      <div class="right-column">
-        <header class="intro-section">
-          <h1>Hello, my name is Kamil</h1>
-          <p>This is my first HTML + CSS project hosted on GitHub Pages.</p>
-        </header>
-        <div class="main-content">
-          <h2>Work Experience</h2>
-          <h4>
-            <strong>Owner - Construction Company "KAM-BUD"</strong><br />2015 -
-            2023
-          </h4>
-          <ul>
-            <li>Renovation and finishing of apartments and houses.</li>
-            <li>Supervising work progress and direct client contact.</li>
-            <li>Installation of drywall (G-K), plastering, painting.</li>
-            <li>Carpentry and upholstery work on request.</li>
-            <li>Operating construction tools and equipment</li>
-          </ul>
-          <h4>
-            <strong>Freelance Construction & Upholstery Work</strong><br />2012
-            - 2015
-          </h4>
-          <ul>
-            <li>
-              General construction work (bricklaying, interior finishing,
-              installation)
-            </li>
-          </ul>
+  <div id="pl">
+    <h1>Cześć, mam na imię Kamil</h1>
+    <h4>To jest mój pierwszy projekt HTML + CSS opublikowany na GitHub Pages.</h4>
 
-          <h2>Education</h2>
-          <p>
-            Vocational School – KEN in Kalwaria Zebrzydowska<br />
-            Title: Certified Upholsterer
-          </p>
-
-          <h2>Courses & Training</h2>
-          <ul>
-            <li>HTML & CSS from Beginner to Expert – Udemy</li>
-            <li>WordPress + WooCommerce – Udemy</li>
-            <li>Unity Game Development in C# – Udemy</li>
-            <li>ChatGPT for Developers – Udemy</li>
-            <li>Python 3 from Zero to Expert – Udemy</li>
-            <li>Interactive Data Visualization in Python – Udemy</li>
-            <li>Bash & Linux Command Line – Udemy</li>
-            <li>Intro to Statistics with Python – Udemy</li>
-            <li>ML Bootcamp in Python – Udemy</li>
-            <li>MySQL from Basics – Udemy</li>
-          </ul>
-        </div>
-      </div>
+    <div class="section">
+      <h2>Doświadczenie zawodowe</h2>
+      <h4>Właściciel firmy budowlanej "KAM-BUD" (2015 – 2023)</h4>
+      <ul>
+        <li>Remonty i wykończenia mieszkań</li>
+        <li>Nadzór nad pracami i kontakt z klientem</li>
+        <li>Montaż płyt G-K, szpachlowanie, malowanie, tynkowanie</li>
+        <li>Prace stolarskie i tapicerskie</li>
+        <li>Obsługa narzędzi i sprzętu budowlanego</li>
+      </ul>
     </div>
-  </body>
+  </div>
+
+  <div id="en" class="hidden">
+    <h1>Hello, my name is Kamil</h1>
+    <h4>This is my first HTML + CSS project hosted on GitHub Pages.</h4>
+
+    <div class="section">
+      <h2>Work Experience</h2>
+      <h4>Owner of construction company "KAM-BUD" (2015 – 2023)</h4>
+      <ul>
+        <li>Renovation and finishing of apartments</li>
+        <li>Supervision and client communication</li>
+        <li>Drywall installation, plastering, painting</li>
+        <li>Carpentry and upholstery work</li>
+        <li>Operating construction tools and equipment</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      document.getElementById('pl').classList.add('hidden');
+      document.getElementById('en').classList.add('hidden');
+      document.getElementById(lang).classList.remove('hidden');
+    }
+  </script>
+</body>
 </html>
