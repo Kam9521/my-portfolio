@@ -7,6 +7,7 @@ body {
 
 .container {
   display: flex;
+  flex-wrap: wrap; /* KLUCZOWE! */
   max-width: 1200px;
   margin: auto;
   padding: 40px 20px;
@@ -98,9 +99,9 @@ body {
   color: #444;
   line-height: 1.5;
 }
+
 @media (max-width: 768px) {
   .container {
-    display: flex;
     flex-direction: column;
     padding: 10px;
   }
